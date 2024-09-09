@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+ RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    andoroid:background="@Drawable/login_background"
+    tools:context=".MainActivity">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:orientation="vertical"
+
+    <ImageView
+    android:layout_with="160dp"
+    android:layout_height="160dp"
+    android:scr="@drawable/icon_account_circle"/>
+
+    <Edit_text
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="32dp"
+    android:hint="username"
+    android:TextColor="@color/white"
+    android:TextColorHint="@color/white"
+    android:Text_Size="20sp"
+    android:background="@drawable/rounded_corner"
+    android:Padding="18dp"
+    android:inputType="text"
+    android:id="@+id/username_input"/>
+
+    <Edit_text
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:hint="Password"
+    android:TextColor="@color/white"
+    android:TextColorHint="@color/white"
+    android:Text_Size="20sp"
+    android:background="@drawable/rounded_corner"
+    android:Padding="18dp"
+    android:inputType="text"
+    android:id="@+id/password_input"/>
+
+    <button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:Text="login"
+    android:backgroundTint="@color/white"
+    android:TextColor="#3884F1"
+    android:Padding="18dp"
+    android:layout_MarginTop="32dp"
+    android:TextSize="20sp"
+    android:id="@+id/login_btn"/>
+
+    <textView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:Text="Social login"
+    android:TextSize="18sp"
+    android:TextColor="@color/white"
+    android:layout_MarginTop="32dp" />
+
+    <LinierLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_MarginTop="8dp"
+    android:gravity="center">
+
+    <ImageView
+    android:layout_width="64dp"
+    android:layout_height="64dp"
+    android:layout_margin="16dp"
+
+</androidx.constraintlayout.widget.ConstraintLayout>
