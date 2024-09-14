@@ -1,26 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
- RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+ <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    andoroid:background="@Drawable/login_background"
+    android:background="@drawable/login_background"
     tools:context=".MainActivity">
-
+    <TextView
+        android:text="Login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/textView"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:fontFamily="sans-serif"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
+        app:layout_constraintVertical_bias="1.0"/>
 <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:gravity="center"
-    android:orientation="vertical"
+    android:orientation="vertical">
+
 
     <ImageView
-    android:layout_with="160dp"
+    android:layout_width="160dp"
     android:layout_height="160dp"
-    android:scr="@drawable/icon_account_circle"/>
+    android:src="@drawable/baseline_account_circle_24"/>
 
-    <Edit_text
+    <EditText
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginTop="32dp"
@@ -33,20 +48,20 @@
     android:inputType="text"
     android:id="@+id/username_input"/>
 
-    <Edit_text
+    <EditText
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginTop="16dp"
     android:hint="Password"
     android:TextColor="@color/white"
-    android:TextColorHint="@color/white"
+    android:TextColorHint="@color/black"
     android:Text_Size="20sp"
-    android:background="@drawable/rounded_corner"
+    android:background="rounded_corner"
     android:Padding="18dp"
     android:inputType="text"
     android:id="@+id/password_input"/>
 
-    <button
+    <Button
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:Text="login"
@@ -55,26 +70,37 @@
     android:Padding="18dp"
     android:layout_MarginTop="32dp"
     android:TextSize="20sp"
-    android:id="@+id/login_btn"/>
+    android:id="@+id/BtnLogin"/>
 
-    <textView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:Text="Social login"
-    android:TextSize="18sp"
-    android:TextColor="@color/white"
-    android:layout_MarginTop="32dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sosial Login"
+            android:textColor="#FFFF"
+            android:layout_marginTop="32dp"
+            android:textSize="18sp"
+            />
 
-    <LinierLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="horizontal"
-    android:layout_MarginTop="8dp"
-    android:gravity="center">
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:Text="login"
+        android:backgroundTint="@color/white"
+        android:textColor="#3884F1"
+        android:Padding="18dp"
+        android:layout_MarginTop="32dp"
+        android:TextSize="20sp"
+        android:id="@+id/login_btn"/>
 
-    <ImageView
-    android:layout_width="64dp"
-    android:layout_height="64dp"
-    android:layout_margin="16dp"
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sosial Login"
+        android:textColor="#FFFF"
+        android:layout_marginTop="32dp"
+        android:textSize="18sp"
+        />
+    </LinearLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
